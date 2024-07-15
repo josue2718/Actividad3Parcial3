@@ -38,12 +38,14 @@ select {
 }
 
 .search-container input {
-    width: 550px;
+    width: 510px;
     border: 1px solid #ccc;
     padding: 14px;
-    font-size: 12px;
+    font-size: 16px;
+    color: rgb(63, 63, 63);
     border-radius: 1px;
     padding-left: 20px;
+    padding-right: 50px;
     margin-left: -200px;
     margin-top: -10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
@@ -87,8 +89,9 @@ img
 }
 .ECF /* Enviar */
 {
-    width: 109px;
+    width: 125px;
     margin-top: -1px;
+    margin-left: 50px;
     color: #5a5a5a;
 }
 
@@ -104,7 +107,7 @@ img
 .info2
 {
     display: flex;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-top: 10px;
 }
 .info3
@@ -147,23 +150,36 @@ select {
     color: #000000;
     font-size: 30px;
 }
+.filtros
+{
+    height: 1400px;
+
+}
+
 .cantidad
 {
     color: #000000;
     font-size: 12px;
 }
+main
+{
 
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre columnas */
+    box-sizing: border-box;
+}
 .result-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Espacio entre columnas */
     box-sizing: border-box;
-    margin-top: -1200px;
+    margin-top: -1380px;
     margin-left: 250px;
-    width: 100%;
+    width: 1050px;
 }
 
 .result-item {
+    
     flex-basis: calc(25% - 20px); 
     box-sizing: border-box;
     border: 0px solid #ddd; /* Borde para ver los elementos mejor */
@@ -172,7 +188,6 @@ select {
     text-align: center; /* Centrar el contenido */
     width: 250px;
     min-height: 300px; /* Altura mínima para todos los elementos */
-    display: flex;
     flex-direction: column;
     justify-content: space-between; 
 }
@@ -204,11 +219,12 @@ select {
 .filtro-container {
     background-color: transparent;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 0px;
     width: 200px;
     font-size: 12px;
+    display: block;
 }
 .ads
 {
@@ -218,11 +234,13 @@ select {
 }
 
 .filtro1, .filtro2 {
+    display: block;
     margin-bottom: 1px;
     margin-top: 0px;
 }
 
 .filtro1 label, .filtro2 label {
+    display: block;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -230,6 +248,7 @@ select {
 }
 
 .filtro-switch {
+    display: block;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -320,4 +339,40 @@ a{
 a:hover
 {
     color: #000000;
+    opacity: 100%;
+}
+.carrito
+{
+    display: flex;
+    margin-top: -20px;
+    margin-left: 110px;
+    width: 18px;
+    opacity: 60%;
+}
+.ubicacion
+{
+    display: flex;
+    margin-top: -42px;
+    margin-left: -50px;
+    width: 40px;
+    opacity: 80%;
+
+}
+.pa
+{
+    display: flex;
+    margin-left: 350px;
+}
+
+.poq
+{
+    display: flex;
+    margin-top: 10px;
+}
+.pq
+{
+    width: 20px;
+    height: 20px;
+    margin-left: -100px;
+    margin-top: 1px;
 }

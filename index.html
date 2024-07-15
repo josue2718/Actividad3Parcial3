@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="icon" href="image2.png" type="image/png">
+    <title id="Busquedas2">Mercado Libre</title>
 </head>
 <body>
     <header> 
         <div class="search-container">
-            <div class="MCD"><img src="image.png" alt=""></div>
+            <div class="MCD"><a href=""><img src="image.png" alt="Mercado Libre"></a></div>
             <form onsubmit="event.preventDefault(); Buscar();"> <!-- Evita el envío del formulario y llama a la función Buscar -->
                 <input type="text" id="Busqueda" placeholder="Buscar productos, marcas y más...">
                 <button type="submit" class="fa fa-search"></button>
             </form>
+            <div class="pa">
+                <a class="poq" href="pokemex.html">Pokédex<img src="favicon-16x16.png" class="pq" alt=""></a>
+            </div>  
         </div>
         <div class="info">
             <div class="ECF">
-                Enviar a Capital Federal
+                Enviar a Uman Yucatan <img class="ubicacion" src="marcador-de-posicion.png" alt="carrito">
             </div>
             
             <div class="info2">
                 <div class="Categoria">
                 <select name="" id="" >
                     <option value=""> Categorias</option>
-                    <option value="">Vehiculos</option>
                 </select>
                 </div>
                 <div class="info3">
@@ -39,13 +42,14 @@
                 <div class="info4">
                     <div><a href="">Crea Tu Cuenta</a></div>
                     <div><a href="">Ingresá</a></div>
-                    <div><a href="">Mis Compras</a></div>
+                    <div><a href="">Mis Compras <img class="carrito" src="carrito-de-compras.png" alt="carrito"> </a></div>
                 </div>
             </div>
             
         </div>
     </header>
-    <aside>
+    <aside class="filtros">
+
         <div class="filtro-container">
             <div id="Busquedas" class="busqueda"></div>
             <div id="cantidadResultados" class="cantidad"></div>
@@ -158,6 +162,7 @@
     </aside>
     <main>
         <a id="Resultado" class="result-container"></a>
+        <br><br>
     </main>
    <script src="app.js"></script> 
 </body>

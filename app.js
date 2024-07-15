@@ -3,7 +3,7 @@ function Buscar() {
     if (Busqueda) {
         Busqueda = Busqueda.charAt(0).toUpperCase() + Busqueda.slice(1);
     }
-    document.getElementById('Busquedas').textContent = Busqueda;
+    
     fetch('https://api.mercadolibre.com/sites/MLA/search?q=' + Busqueda)
         .then(res => res.json())
         .then(res => {
@@ -47,6 +47,8 @@ function Buscar() {
             
                 // Agregar el enlace al contenedor principal
                 resultadoContainer.appendChild(itemLink);
+                document.getElementById('Busquedas').textContent = Busqueda;
+                document.getElementById('Busquedas2').textContent = Busqueda;
             });
         })
         .catch(err => console.error(err));
