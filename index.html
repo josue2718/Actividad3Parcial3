@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <div class="search-container">
+            <div class="MCD"><img src="image.png" alt=""></div>
+            <form onsubmit="event.preventDefault(); Buscar();"> <!-- Evita el envío del formulario y llama a la función Buscar -->
+                <input type="text" id="Busqueda" placeholder="Buscar productos, marcas y más...">
+                <button type="submit" class="fa fa-search"></button>
+            </form>
+        </div>
+        <div class="info">
+            <div class="ECF">
+                Enviar a Capital Federal
+            </div>
+            
+            <div class="info2">
+                <div class="Categoria">
+                <select name="" id="" >
+                    <option value=""> Categorias</option>
+                    <option value="">Vehiculos</option>
+                </select>
+                </div>
+                <div class="info3">
+                    <div><a href="">Ofertas</a></div>
+                    <div><a href="">Supermecado</a></div>
+                    <div><a href=""></a>Moda</div>
+                    <div><a href="">Mercado Play</a></div>
+                    <div><a href="">Vender</a></div>
+                    <div><a href="">Ayuda</a></div>  
+                </div>
+                <div class="info4">
+                    <div><a href="">Crea Tu Cuenta</a></div>
+                    <div><a href="">Ingresá</a></div>
+                    <div><a href="">Mis Compras</a></div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <aside>
+        <div class="filtro-container">
+            <div id="Busquedas" class="busqueda"></div>
+            <div id="cantidadResultados" class="cantidad"></div>
+            <div class="filtro1">
+                <label class="filtro-switch">
+                    Llegan mañana
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="filtro1">
+                <label class="filtro-switch">
+                    <span class="filtro-green">FULL</span><p class="ads">Da envío gratis</p> 
+                    <p class="filtro-small-text">En carritos desde $ 23.000</p>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="filtro1">
+                <label class="filtro-switch">
+                    Envío gratis
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="filtro1">
+                <label class="filtro-switch">
+                    Mejor precio en cuotas
+                    <p class="filtro-small-text2">Al mismo precio o con bajo interés</p>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    
+        <div class="filtro-container">
+            <h3>Condición</h3>
+            <div class="filtro2">
+                <label class="punto">
+                    <input type="checkbox">
+                    Nuevo 
+                </label>
+            </div>
+            <div class="filtro2">
+                <label class="punto">
+                    <input type="checkbox">
+                    Usado 
+                </label>
+            </div>
+    
+            <h3>Envío</h3>
+            <div class="filtro2">
+                <label class="punto">
+                    <input type="checkbox">
+                    <span class="filtro-green">FULL</span>
+                </label>
+            </div>
+    
+            <h3>Costo de envío</h3>
+            <div class="filtro2">
+                <label class="punto">
+                    <input type="checkbox">
+                    Envío gratis 
+                </label>
+            </div>
+    
+            <h3>Tiempo de entrega</h3>
+            <div class="filtro2">
+                <label class="punto">
+                    <input type="checkbox">
+                    Llegan en menos de 24 hs 
+                </label>
+            </div>
+    
+            <h3>Cuotas</h3>
+            <div class="filtro2">
+                <label class="punto">
+                    <input type="checkbox" >
+                    Mismo precio en cuotas 
+                </label>
+            </div>
+            <div class="filtro2">
+                <label class="punto">
+                    <input type="checkbox">
+                    Cuota promocionada 
+                </label>
+            </div>
+    
+            <h3>Precio</h3>
+            <div class="filtro2">
+                <label>
+                    Hasta $ 100.000 
+                </label>
+            </div>
+            <div class="filtro2">
+                <label>
+                    $100.000 a $250.000 
+                </label>
+            </div>
+            <div class="filtro2">
+                <label>
+                    Más de $250.000 
+                </label>
+            </div>
+            <div class="filtro2">
+                <input type="text" placeholder="Mínimo">  -
+                <input type="text" placeholder="Máximo">
+            </div>
+        </div>
+    </aside>
+    <main>
+        <a id="Resultado" class="result-container"></a>
+    </main>
+   <script src="app.js"></script> 
+</body>
+</html>

@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: #e4e4e4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #FFE600;
+    padding: 10px 20px; /* Relleno interior */
+    justify-content: space-between; /* Distribución de elementos */
+    align-items: center; /* Alineación vertical */
+    border-bottom: 1px solid #ccc; /* Borde inferior */
+    margin: 0; /* Quitar márgenes */
+    width: 100%; /* Ocupa todo el ancho */
+    box-sizing: border-box; /* Incluir relleno y borde en el ancho */
+}
+
+/*buscar*/
+select {
+    border: 0% solid transparent; /* Borde transparente */
+    background-color: transparent; /* Fondo transparente */
+    padding: 8px; /* Añade relleno alrededor del texto dentro del select */
+    border-radius: 400px; /* Borde redondeado */
+    width: 110PX;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.search-container {
+    width: 50%;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+}
+
+.search-container input {
+    width: 550px;
+    border: 1px solid #ccc;
+    padding: 14px;
+    font-size: 12px;
+    border-radius: 1px;
+    padding-left: 20px;
+    margin-left: -200px;
+    margin-top: -10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+button.fa-search {
+    position: absolute;
+    left: 460px;
+    top: 30%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+    color: #b3b3b3;
+}
+
+button.fa-search:hover {
+    color: #000000;
+}
+
+.botones {
+  width: 80%;
+    margin: 100px 310px;
+}
+
+form
+{
+    margin-left: 120px;
+}
+
+img
+{
+    padding: 1px;
+    width: 150px;
+    margin-top: 0px;
+    margin-left: -270px;
+}
+.ECF /* Enviar */
+{
+    width: 109px;
+    margin-top: -1px;
+    color: #5a5a5a;
+}
+
+.info
+{
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.info2
+{
+    display: flex;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.info3
+{
+    display: flex;
+}
+.info4
+{
+    display: flex;
+    margin-left: 10px;
+}
+.info3 > div {
+    margin-right: 1px; /* Espacio entre elementos */
+    color: #5a5a5a;
+    width: 95px;
+    text-align: center;
+}
+.info4 > div {
+    margin-right: 2px; /* Espacio entre elementos */
+    color: #5a5a5a;
+    width: 120px;
+    text-align: center;
+}
+
+select {
+    -webkit-appearance: none; /* Webkit */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Estándar */
+    background: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center; /* Reemplaza la flecha por un SVG */
+    background-color: transparent; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border: 0px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    Color: #5a5a5a; /* Color del texto */
+    width: 105px;
+    font-size: 14px;
+}
+.busqueda
+{
+    color: #000000;
+    font-size: 30px;
+}
+.cantidad
+{
+    color: #000000;
+    font-size: 12px;
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre columnas */
+    box-sizing: border-box;
+    margin-top: -1200px;
+    margin-left: 250px;
+    width: 100%;
+}
+
+.result-item {
+    flex-basis: calc(25% - 20px); 
+    box-sizing: border-box;
+    border: 0px solid #ddd; /* Borde para ver los elementos mejor */
+    padding: 10px; /* Espacio interno */
+    background-color: #ffffff;
+    text-align: center; /* Centrar el contenido */
+    width: 250px;
+    min-height: 300px; /* Altura mínima para todos los elementos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.result-item img {
+    max-width: 110px;
+    margin-left: 30%;
+}
+
+.result-item h3 {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.result-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.result-container .result-item:hover {
+    opacity: 1; /* Mantener la opacidad del elemento bajo el puntero */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añadir un borde difuminado */
+    background-color: #ffffff;
+    padding: 10px; /* Espacio interno */
+}
+.filtro-container {
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 12px;
+}
+.ads
+{
+    margin-top: -80px;
+    margin-left: -10px;
+    width: 200px;
+}
+
+.filtro1, .filtro2 {
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+.filtro1 label, .filtro2 label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filtro-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.filtro-switch input {
+    display: none;
+}
+
+
+.filtro-small-text {
+    color: #666;
+    font-size: 11px;
+    margin-top: 100px;
+    margin-left: -200px;
+}
+.filtro-small-text2 {
+    color: #666;
+    font-size: 12px;
+    margin-top: 100px;
+    margin-left: -115px;
+}
+/*full*/
+.filtro-green {
+    color: #44dd84;
+    font-weight: bold;
+}
+/*botones movibles*/
+.slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #0059ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.filtro2 label {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.punto input[type="checkbox"] {
+    margin-right: 8px; 
+    width: 20px;
+    height: 20px;
+    border-radius: 1000px;
+    background-color: #000000; 
+  }
+
+.filtro2 input[type="text"] {
+    width:80px;
+    background-color: #ffffff;
+    border: 0px solid #ddd;
+}
+a{
+    text-decoration: none;
+    color:#5a5a5a ;
+}
+a:hover
+{
+    color: #000000;
+}
